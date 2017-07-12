@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/jquery.treegrid.css">
+	<link rel="stylesheet" href="segvek.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+		<header class="row">
+			<div class="col-md-12">
+				<ul>
+					<li class="activ">
+						<img src="http://www.electronicmegastore.it/img/box/transport-icon.png">
+						<br>
+						<p>Автомобильные средства</p>
+					</li>
+					<li >
+						<img src="http://www.iconsearch.ru/ajax/download.php?icon_id=28814&size=6&format=png">
+						<br>
+						<p>Сервис</p>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="row">
+			<aside class="col-md-2">
+				<ul>
+					<li class="important"><a href="#">Номенклатура</a></li>
+					<li class="indent"></li>
+					<li><a href="#">Автомобили</a></li>
+					<li><a href="#">Ссылка</a></li>
+					<li class="subsystem" visible="true">
+						<p onclick="clickSubsystem(this)">Подсистема</p>
+						<ul>
+							<li class="important"><a href="#">Справочник</a></li>
+							<li><a href="#">Документ</a></li>
+							<li><a href="#">Ещё документ</a></li>
+						
+						</ul>
+					</li>
+					<li><a href="#">Ссылка</a></li>
+					<li><a href="#">Ссылка</a></li>
+					
+					<li class="also">
+						<p>См. также</p>
+						<ul>
+							<li><a href="#">Справочник</a></li>
+							<li><a href="#">Документ</a></li>
+							<li><a href="#">Ещё документ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<content class="col-md-10">
+				<section>
+					<h5>Автомобильные средства</h5>
+					<nav>
+						<ul class="left-menu">
+							<a href="#win1" ><li class="button"><img class="icon" src="image/file-add.png"><span>Создать</span></li></a>
+							<li class="indent"></li>
+							<a href="#win2" ><li class="button"><img class="icon" src="image/package-add.png"></li></a>
+							<li class="button"><img class="icon" src="image/edit_5300.png"></li>
+							<li class="button"><img class="icon" src="image/delete.png"></li>
+						</ul>
+						<ul class="right-menu" >
+							<li class="button">Все действия</li>
+							<li class="indent"></li>
+							<li class="button"><img class="icon" src="image/info.png"></li>
+						</ul>
+					</nav>			
+					<table class="tree"">
+						<tr>
+							<th>Код</th>
+							<th>Наименование</th>
+						</tr>
+						
+						<tr class="treegrid-1">
+							<td class="folder">
+								<span class="group"></span>
+								<span>0265896542356</span>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-2 treegrid-parent-1">
+							<td>
+								<span class="group"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-3 treegrid-parent-2">
+							<td>
+								<span class="group"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-4 treegrid-parent-3">
+							<td>
+								<span class="element"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-5 treegrid-parent-3">
+							<td>
+								<span class="element"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-6 treegrid-parent-2">
+							<td>
+								<span class="element"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Очень очень длинное наименование</td>
+						</tr>
+						<tr class="treegrid-7">
+							<td>
+								<span class="element"></span>
+								<span>0265896542356</span>
+							</td>
+							<td>Открыть окно 2</td>
+						</tr>
+					
+					</table>
+				</section>
+			</content>
+		</section>
+		<footer class="row">
+			<div class="col-md-12">
+				this is a status block.
+			</div>
+		</footer>
+	</div>
+
+	
+	
+	
+	<!--this area contains the code for the modal windows--> 
+	<a href="#x" class="overlay" id="win1"></a>
+	<div class="popup">
+		<div class="content">
+			<h5>Автомобильные средства</h5>
+			<form method="GET" action="index.html">
+				<nav>
+					<ul class="left-menu">
+						<li> <button type="submit">Записать и закрыть</button></li>
+						<li class="indent"></li>
+						<li class="button"><img class="icon" src="image/save.png"></li>
+					</ul>
+					<ul class="right-menu" >
+						<li class="button">Все действия</li>
+						<li class="indent"></li>
+						<li class="button"><img class="icon" src="image/info.png"></li>
+					</ul>
+				</nav>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2">
+							<label>Код:</label>
+							<label>Наименование:</label>
+						</div>
+						<div class="col-md-10">
+							<input type="text" name="id"/>
+							<input type="text" name="name"/>
+						</div>
+					</div>
+				</div>
+			</form>
+			<a class="close"title="Закрыть" href="#close"></a>
+		</div>
+	</div>
+	
+	<a href="#x" class="overlay" id="win2"></a>
+	<div class="popup">
+		<div class="content">
+			<h5>Автомобильные средства</h5>
+			<nav>
+				<ul class="left-menu">
+					<li>Записать и закрыть</li>
+					<li class="indent"></li>
+					<li class="button"><img class="icon" src="image/save.png"></li>
+				</ul>
+				<ul class="right-menu" >
+					<li class="button">Все действия</li>
+					<li class="indent"></li>
+					<li class="button"><img class="icon" src="image/info.png"></li>
+				</ul>
+			</nav>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2">
+						<label>Код:</label>
+						<label>Наименование:</label>
+					</div>
+					<div class="col-md-10">
+						<input type="text" name="id"/>
+						<input type="text" name="name"/>
+					</div>
+				</div>
+			</div>
+			<a class="close"title="Закрыть" href="#close"></a>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/jquery.treegrid.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			resizeAside();
+			removeFooter();
+			resizeTable();
+			loadtable();
+		});
+		$(window).resize(function(){
+			resizeAside();
+			removeFooter();
+			resizeTable();
+		});
+		
+		function loadtable(){
+			$("table").treegrid();
+			$('table').treegrid('collapseAll');
+		}
+	
+
+		$("table tbody").on("mousedown", "tr", function() {
+			$(".selected").not(this).removeClass("selected");
+			$(this).toggleClass("selected");
+		});
+		
+		$("table tbody").on("dblclick", "tr", function() {
+			if ($(this).treegrid("isNode")) {
+				if($(this).treegrid('isExpanded')){
+					$(this).treegrid('collapse');
+				}else{
+					$(this).treegrid('expand');
+				}
+			}
+		});
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		function resizeAside(){
+			var docHeight = $(window).height();
+			var footerHeight = $('footer').height();
+			var headerHeight = $('header').height();
+			var headerBottom = parseInt($('header').css('margin-bottom'));
+			var footerTop = parseInt($('footer').css('margin-top'));
+			$('section').css('height',(docHeight-footerHeight-headerHeight-footerTop-headerBottom)+ 'px');
+			
+		}
+		function resizeTable(){
+			var dolockHeight = $('content>section').height();
+			var navHeight=$('content nav').height();
+			
+			$('table').css('height',(dolockHeight-navHeight-35)+ 'px');
+		}
+		function removeFooter(){
+			var docHeight = $(window).height();
+			var footerHeight = $('footer').height();
+			var footerTop = $('footer').position().top + footerHeight;
+
+			if (footerTop < docHeight) {
+				$('footer').css('margin-top', (docHeight - footerTop) + 'px');
+			}
+		}
+	
+		
+		function clickSubsystem(elp) {
+			el=$(elp).parent()
+			if($(el).attr('visible')==="true"){
+				$(el).attr("visible","false");
+				$(el).find("ul").css("display","none");
+			}else{
+				$(el).find("ul").css("display","block");
+				$(el).attr("visible","true");
+			};
+		}
+		
+	</script>
+  </body>
+</html>
